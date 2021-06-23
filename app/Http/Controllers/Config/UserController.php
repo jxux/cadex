@@ -45,14 +45,14 @@ class UserController extends Controller{
         return new UserCollection($records->paginate(20));
     }
 
-    public function edit(User $user){
-        $roles = Role::all();
-        return view('admin.users.edit', compact('user', 'roles'));
-    }
+    // public function edit(User $user){
+    //     $roles = Role::all();
+    //     return view('admin.users.edit', compact('user', 'roles'));
+    // }
 
-    public function update(Request $request, User $user){
-        $user->roles()->sync($request->roles);
-    }
+    // public function update(Request $request, User $user){
+    //     $user->roles()->sync($request->roles);
+    // }
 
     public function tables(){
         $countries = Country::whereActive()->orderByDescription()->get();
@@ -90,5 +90,21 @@ class UserController extends Controller{
             'message' => ($id)?'Usuario editado con éxito':'Usuario registrado con éxito',
             // 'id' => $person->id
         ];
+    }
+
+    // public function __construct(){
+    //     $this->middleware('can:admin.users.index')->only('index');
+    //     $this->middleware('can:admin.users.edit')->only('edit', 'update');
+    // }
+
+    public function edit(User $user){
+        $roles = Role::all();
+        return view('admin.users.edit', compact('user', 'roles'));
+    }
+
+    public function update(Request $request, User $user){
+        
+        $user->roles()->sync($request->roles);
+        return redirect()->route('admin.users.edit', $user)->with('info', 'Se actualizo los roles con exito');
     }
 }
