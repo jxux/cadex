@@ -31,7 +31,7 @@
             </a>
             @if (Route::has('login'))
                 @auth
-                <a data-title="Dashboard" href="{{ url('/dashboard') }}">
+                <a data-title="Dashboard" href="{{ route('dashboard') }}">
                     <li>Dashboard</li>
                 </a>
                 @else
