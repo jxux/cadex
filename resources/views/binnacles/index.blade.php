@@ -8,7 +8,7 @@
 
 @section('content')
 
-    @livewire('admin.user-index')
+    {{-- @livewire('admin.user-index') --}}
 
 @stop
 
