@@ -1,0 +1,84 @@
+.proceso .medio {
+  padding: 10px;
+  background: white;
+  border: 1px solid #EFEFEF;
+  margin-top: 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.proceso_items {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  padding: 30px 10px; }
+  .proceso_items span {
+    font-size: 80px;
+    font-weight: bold;
+    color: #991C27;
+    opacity: .7;
+    margin-right: 20px; }
+  .proceso_items:nth-child(2), .proceso_items:nth-child(4) {
+    border-right: 1px solid #EFEFEF; }
+  .proceso_items:nth-child(2), .proceso_items:nth-child(3) {
+    border-bottom: 1px solid #EFEFEF; }
+
+.proceso_items_info {
+  width: 50%; }
+
+.proceso_items:nth-child(2) {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.proceso_items:nth-child(3) {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.proceso_items:nth-child(4) {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+@media screen and (max-width: 768px) {
+  .proceso_items_info {
+    width: auto; } }
+
+@media screen and (max-width: 500px) {
+  .proceso_items {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #EFEFEF !important;
+    padding: 10px; }
+    .proceso_items h3,
+    .proceso_items span {
+      text-align: center;
+      width: 100%;
+      margin: 0; }
+    .proceso_items h3 {
+      margin: 5px 0; }
+    .proceso_items:nth-child(2), .proceso_items:nth-child(4) {
+      border-style: none; }
+    .proceso_items:nth-child(2), .proceso_items:nth-child(3) {
+      border-style: none; }
+  .proceso_items_info p {
+    font-size: 14px; } }

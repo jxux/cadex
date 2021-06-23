@@ -1,0 +1,117 @@
+footer {
+  background: #EFEFEF;
+  margin-top: 20px; }
+  footer .medio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px; }
+
+.primer,
+.segundo,
+.tercer {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.primer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .primer img {
+    width: 200px; }
+
+.segundo a {
+  color: black;
+  margin: 8px 0;
+  border-bottom: 1px solid rgba(36, 46, 121, 0.6);
+  padding-bottom: 5px; }
+
+.tercer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 10px !important; }
+  .tercer a {
+    color: black;
+    margin: 8px 0;
+    border-bottom: 1px solid rgba(36, 46, 121, 0.6);
+    padding-bottom: 5px; }
+
+.titulo_footer {
+  font-weight: bold;
+  color: #242E79;
+  margin: 8px 0; }
+
+.ultimo {
+  background: #5283BB; }
+  .ultimo .medio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px; }
+    .ultimo .medio h2 {
+      font-size: 16px;
+      color: white; }
+    .ultimo .medio span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: white; }
+      .ultimo .medio span a {
+        margin-left: 5px;
+        color: white;
+        font-weight: bold; }
+
+@media screen and (max-width: 700px) {
+  .segundo {
+    display: none; } }
+
+@media screen and (max-width: 500px) {
+  footer .medio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .segundo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .tercer {
+    margin: 0 !important; } }
+
+@media screen and (max-width: 400px) {
+  .ultimo .medio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .ultimo .medio span {
+      margin-top: 10px; }
+  .slider_seccion {
+    margin-top: 100px;
+    height: 200px; }
+  h1 {
+    margin: 20px 0; }
+  .info {
+    margin: 0; } }

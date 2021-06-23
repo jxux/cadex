@@ -1,0 +1,120 @@
+header {
+  background: #242E79; }
+
+.medio {
+  overflow: hidden; }
+
+.slider_seccion {
+  width: 100%;
+  height: 280px;
+  margin-top: 100px; }
+  .slider_seccion img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  margin-top: 40px; }
+
+.info, .carga {
+  margin-top: 20px; }
+  .info .medio, .carga .medio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border: 1px solid #EFEFEF; }
+
+.description_product {
+  width: 70%;
+  margin-left: 20px; }
+
+.titulo_seccion {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #b1b1b1; }
+
+.text_description {
+  margin-top: 20px; }
+
+.image_product {
+  width: 350px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.image_camion {
+  width: 500px;
+  height: 350px; }
+
+.empaque_product li {
+  margin-top: 20px;
+  list-style: disc; }
+
+@media screen and (max-width: 870px) {
+  .text_description {
+    font-size: 14px;
+    line-height: 25px; }
+  .image_camion {
+    width: 300px;
+    height: 200px; } }
+
+@media screen and (max-width: 800px) {
+  .info .medio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .image_product {
+    width: 100%; }
+  .description_product {
+    width: 100%;
+    margin: 0; }
+  .titulo_seccion {
+    margin-top: 20px; } }
+
+@media screen and (max-width: 750px) {
+  .carga .medio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .empaque_product {
+    width: 100%;
+    margin-bottom: 20px; }
+  .image_camion {
+    width: 300px;
+    height: 200px; } }
+
+@media screen and (max-width: 400px) {
+  .description_product {
+    margin: 0; }
+  .text_description {
+    line-height: 20px;
+    font-size: 12px; }
+  .image_camion {
+    width: 200px;
+    height: 150px; }
+  .image_product {
+    height: 200px; }
+  h1 {
+    font-size: 25px; }
+  .empaque_product li {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 22px; } }
